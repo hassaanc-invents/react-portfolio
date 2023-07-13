@@ -3,7 +3,7 @@ import AppRouter from './Router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <AppRouter/>
     </div>
   );
