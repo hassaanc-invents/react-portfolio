@@ -1,0 +1,28 @@
+#minicircle{
+    width: 70px;
+    height: 70px;
+    background: #232424;
+    border-radius: 50%;
+}
+.githubicon{
+    width: 40px !important;
+    margin-left: auto;
+}
+.experttitle{
+    font-size: 12px !important;
+    background-color: #6EF3A5 !important;
+    color: black !important;
+    border-radius: 3px !important;
+}
+.experttitle:hover{
+    box-shadow: 0 0 10px #6EF3A5;
+}
+.first-name{
+    letter-spacing: 7px;
+    font-weight: 200;
+    font-size: 52px;
+}.last-name{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 52px;
+}

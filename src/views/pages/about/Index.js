@@ -1,8 +1,0 @@
-const Index = ()=>{
-    return (
-        <h1>
-            I am About
-        </h1>
-    )
-}
-export default Index;

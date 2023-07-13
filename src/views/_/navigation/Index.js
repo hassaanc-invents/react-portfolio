@@ -16,9 +16,9 @@ const Navigation = () => {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div>
+    <div className="pt-3">
       <Navbar color="faded" dark expand="md">
-        <NavbarBrand href="/" className="me-auto">
+        <NavbarBrand href="/" className="me-auto" style={{fontFamily: 'cursive', fontSize: '30px'}}>
           &lt; <span id="brand">Hassaan </span>/&gt;
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="me-2">
@@ -29,7 +29,7 @@ const Navigation = () => {
             {Array.isArray(NavigationConfig) &&
               NavigationConfig.map((item) => (
                 <NavItem>
-                  <Link to={item.path} className="nav-link">
+                  <Link to={item.path} className="nav-link ms-3">
                     {item.title}
                   </Link>
                 </NavItem>
