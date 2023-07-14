@@ -26,3 +26,23 @@
     font-weight: bold;
     font-size: 52px;
 }
+.main-img-fluid{
+    height: calc(100vh - 10rem) !important;
+    margin: 0 auto;
+}
+.dev-circle{
+    background-color: #3a3a3a;
+    height: 500px !important;
+    width: 500px !important;
+}
+.social-row{
+    width: 100px;
+}
+.social-icon-wrapper{
+    width: 45px;
+    height: 45px;
+    background-color: #3a3a3a;
+}
+.social-icon-wrapper:hover{
+    box-shadow: 0 0 10px #6EF3A5;
+}
