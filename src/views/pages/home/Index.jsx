@@ -1,8 +1,8 @@
-import Github from "../../../assets/icons/github.png";
 import { Button, Row, Col } from "reactstrap";
 import "../../../assets/style/home.css";
 import DeveloperImage from "../../../assets/images/hassaan.png";
 import SocialConfig from "../../../config/SocialConfig";
+import { GitHub } from "react-feather";
 
 const Index = () => {
   return (
@@ -13,7 +13,7 @@ const Index = () => {
           id="minicircle"
         >
           <a href="https://github.com/hassaanc-invents/react-portfolio" target="_blank">
-            <img src={Github} className="githubicon"></img>
+            <GitHub color="white"/>
           </a>
         </div>
       </Row>
