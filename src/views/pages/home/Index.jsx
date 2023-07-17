@@ -30,6 +30,35 @@ const Index = () => {
             </a>
             ))}
           </div>
+          <div className="mt-5">
+          <a href="contact" className="text-uppercase chat-button">let's chat!</a>
+          </div>
+          <Row className="mt-5 pt-3">
+            <Col sm="4" className="d-flex align-items-center">
+              <h3>
+                2+
+              </h3>
+              <span className="ms-2 home-lables">
+                Years Experience
+              </span>
+            </Col>
+            <Col sm="4" className="d-flex align-items-center ">
+              <h3>
+                35+
+              </h3>
+              <span className="ms-2 home-lables">
+                Projects Completed in 10+ Countries
+              </span>
+            </Col>
+            <Col sm="4" className="d-flex align-items-center">
+              <h3>
+                109k+
+              </h3>
+              <span className="ms-2 home-lables">
+                Content Reach & Views
+              </span>
+            </Col>
+          </Row>
         </Col>
         <Col md="6" className="order-md-1 order-lg-2">
           <div className="w-100 h-auto dev-circle d-flex justify-content-between rounded-circle">

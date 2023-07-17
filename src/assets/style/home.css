@@ -1,48 +1,72 @@
-#minicircle{
+#minicircle {
     width: 70px;
     height: 70px;
     background: #232424;
     border-radius: 50%;
 }
-.githubicon{
+
+.githubicon {
     width: 40px !important;
     margin-left: auto;
 }
-.experttitle{
+
+.experttitle {
     font-size: 12px !important;
     background-color: #6EF3A5 !important;
     color: black !important;
     border-radius: 3px !important;
 }
-.experttitle:hover{
+
+.experttitle:hover {
     box-shadow: 0 0 10px #6EF3A5;
 }
-.first-name{
+
+.first-name {
     letter-spacing: 7px;
     font-weight: 200;
     font-size: 52px;
-}.last-name{
+}
+
+.last-name {
     line-height: 40px;
     font-weight: bold;
     font-size: 52px;
 }
-.main-img-fluid{
+
+.main-img-fluid {
     height: calc(100vh - 10rem) !important;
     margin: 0 auto;
 }
-.dev-circle{
+
+.dev-circle {
     background-color: #3a3a3a;
     height: 500px !important;
     width: 500px !important;
 }
-.social-row{
+
+.social-row {
     width: 100px;
 }
-.social-icon-wrapper{
+
+.social-icon-wrapper {
     width: 45px;
     height: 45px;
     background-color: #3a3a3a;
 }
-.social-icon-wrapper:hover{
+
+.social-icon-wrapper:hover {
     box-shadow: 0 0 10px #6EF3A5;
+}
+
+.chat-button {
+    text-underline-offset: 10px;
+    color: #6EF3A5;
+    font-weight: bold;
+}
+
+.home-lables{
+    color: #7d7e83;
+    letter-spacing: 1px;
+    background-color: transparent;
+    font-size: 12px;
 }
