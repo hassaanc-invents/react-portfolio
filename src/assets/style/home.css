@@ -35,7 +35,6 @@
 
 .main-img-fluid {
     height: calc(100vh - 10rem) !important;
-    margin: 0 auto;
 }
 
 .dev-circle {

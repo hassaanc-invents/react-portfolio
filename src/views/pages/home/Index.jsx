@@ -12,13 +12,13 @@ const Index = () => {
           class="grad-circle d-flex justify-content-center align-items-center "
           id="minicircle"
         >
-          <a href="https://github.com/hassaanc-invents" target="_blank">
+          <a href="https://github.com/hassaanc-invents/react-portfolio" target="_blank">
             <img src={Github} className="githubicon"></img>
           </a>
         </div>
       </Row>
       <Row>
-        <Col md="6" className="order-md-2 order-lg-1 pt-5">
+        <Col lg="6" className="pt-5">
           <Button className="experttitle px-4 mt-5">Full Stack Web Expert</Button>
           <h1 className="first-name mt-3">Muhammad</h1>
           <h1 className="last-name">Hassaan</h1>
@@ -33,8 +33,8 @@ const Index = () => {
           <div className="mt-5">
           <a href="contact" className="text-uppercase chat-button">let's chat!</a>
           </div>
-          <Row className="mt-5 pt-3">
-            <Col sm="4" className="d-flex align-items-center">
+          <Row className="mt-5">
+            <Col lg="4" md="6" className="d-flex align-items-center mt-3">
               <h3>
                 2+
               </h3>
@@ -42,17 +42,17 @@ const Index = () => {
                 Years Experience
               </span>
             </Col>
-            <Col sm="4" className="d-flex align-items-center ">
+            <Col lg="4" md="6" className="d-flex align-items-center mt-3">
               <h3>
-                35+
+                15+
               </h3>
               <span className="ms-2 home-lables">
                 Projects Completed in 10+ Countries
               </span>
             </Col>
-            <Col sm="4" className="d-flex align-items-center">
+            <Col lg="4" md="6" className="d-flex align-items-center mt-3">
               <h3>
-                109k+
+                55k+
               </h3>
               <span className="ms-2 home-lables">
                 Content Reach & Views
@@ -60,10 +60,12 @@ const Index = () => {
             </Col>
           </Row>
         </Col>
-        <Col md="6" className="order-md-1 order-lg-2">
+        <Col lg="6" className="d-none d-lg-block">
           <div className="w-100 h-auto dev-circle d-flex justify-content-between rounded-circle">
           </div>
+          <div className="d-flex justify-content-center align-items-center">
           <img src={DeveloperImage} className="img-fluid main-img-fluid"></img>
+          </div>
         </Col>
       </Row>
     </>
