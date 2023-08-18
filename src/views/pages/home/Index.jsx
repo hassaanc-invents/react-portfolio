@@ -3,6 +3,7 @@ import "../../../assets/style/home.css";
 import DeveloperImage from "../../../assets/images/hassaan.png";
 import SocialConfig from "../../../config/SocialConfig";
 import { GitHub } from "react-feather";
+import { OwnerDetail } from "../../../config/OwnerDetail";
 
 const Index = () => {
   return (
@@ -19,9 +20,9 @@ const Index = () => {
       </Row>
       <Row>
         <Col lg="6" className="pt-5">
-          <Button className="experttitle px-4 mt-5">Full Stack Web Expert</Button>
-          <h1 className="first-name mt-3">Muhammad</h1>
-          <h1 className="last-name">Hassaan</h1>
+          <Button className="experttitle px-4 mt-5">{OwnerDetail.expertIn}</Button>
+          <h1 className="first-name mt-3">{OwnerDetail.sirName}</h1>
+          <h1 className="last-name">{OwnerDetail.firstName}</h1>
           <div class="w-100 social-media d-flex align-items-center mt-4">
             <hr className="social-row"/>
             {Array.isArray(SocialConfig) && SocialConfig.map((item)=>(
@@ -36,7 +37,7 @@ const Index = () => {
           <Row className="mt-5">
             <Col lg="4" md="6" className="d-flex align-items-center mt-3">
               <h3>
-                2+
+                {OwnerDetail.expereienceYears}+
               </h3>
               <span className="ms-2 home-lables">
                 Years Experience
@@ -44,15 +45,15 @@ const Index = () => {
             </Col>
             <Col lg="4" md="6" className="d-flex align-items-center mt-3">
               <h3>
-                15+
+                {OwnerDetail.completedProjects}+
               </h3>
               <span className="ms-2 home-lables">
-                Projects Completed in 10+ Countries
+                Projects Completed in {OwnerDetail.countriesWorkingIn}+ Countries
               </span>
             </Col>
             <Col lg="4" md="6" className="d-flex align-items-center mt-3">
               <h3>
-                55k+
+                {OwnerDetail.contentReach}k+
               </h3>
               <span className="ms-2 home-lables">
                 Content Reach & Views
@@ -64,7 +65,7 @@ const Index = () => {
           <div className="w-100 h-auto dev-circle d-flex justify-content-between rounded-circle">
           </div>
           <div className="d-flex justify-content-center align-items-center">
-          <img src={DeveloperImage} className="img-fluid main-img-fluid"></img>
+          <img src={OwnerDetail.image} className="img-fluid main-img-fluid"></img>
           </div>
         </Col>
       </Row>
