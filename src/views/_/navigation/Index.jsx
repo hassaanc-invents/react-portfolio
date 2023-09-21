@@ -30,7 +30,7 @@ const Navigation = () => {
             {Array.isArray(NavigationConfig) &&
               NavigationConfig.map((item) => (
                 <NavItem>
-                  <Link to={item.path} className="nav-link ms-3">
+                  <Link to={item.path} className="nav-link ms-4">
                     {item.title}
                   </Link>
                 </NavItem>
