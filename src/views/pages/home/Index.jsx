@@ -1,6 +1,5 @@
 import { Button, Row, Col } from "reactstrap";
 import "../../../assets/style/home.css";
-import DeveloperImage from "../../../assets/images/hassaan.png";
 import SocialConfig from "../../../config/SocialConfig";
 import { GitHub } from "react-feather";
 import { OwnerDetail } from "../../../config/OwnerDetail";
