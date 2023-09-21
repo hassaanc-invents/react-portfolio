@@ -1,8 +1,5 @@
 import { Button, Row, Col } from "reactstrap";
 import "../../../assets/style/stack.css";
-// import { MainiStackInformation } from "../../../config/stackConfig";
-// import { StackTechnologies } from "../../../config/stackConfig";
-// import { StackTechnologies } from "../../../config/stackConfig";
 import { StackTechnologies } from "../../../config/stackConfig";
 import { MainiStackInformation } from "../../../config/stackConfig";
 
@@ -10,8 +7,8 @@ const Index = () => {
   return (
     <>
       <Row className="mt-2 mt-lg-5">
-        <Col lg="6" className="pt-2 pt-lg-5">
-          <h2 className="tech-stack-heading my-3">
+        <Col lg="6" className="pt-1 pt-lg-4">
+          <h2 className="tech-stack-heading">
             {MainiStackInformation.heading}
           </h2>
           <p className="tech-detail">{MainiStackInformation.detailpara}</p>
@@ -22,8 +19,8 @@ const Index = () => {
                 <div className="mt-2">
                   {Array.isArray(el.skills) &&
                     el.skills.map((skill) => (
-                      <Button className="d-inline-block text-dark me-2 stack-tech-button border-none">
-                        <img src={skill.icon} className="me-2" /> {skill.name}
+                      <Button className="d-inline-block text-dark me-2 my-2 stack-tech-button border-none">
+                        <img src={skill.icon} className="me-2" height={22} width={22} /> {skill.name}
                       </Button>
                     ))}
                 </div>
