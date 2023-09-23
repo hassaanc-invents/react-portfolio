@@ -1,5 +1,5 @@
 import { Button, Row, Col } from "reactstrap";
-import "../../../assets/style/stack.css";
+import "./_/style.css";
 import { StackTechnologies } from "../../../config/stackConfig";
 import { MainiStackInformation } from "../../../config/stackConfig";
 

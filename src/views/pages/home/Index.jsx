@@ -1,5 +1,5 @@
 import { Button, Row, Col } from "reactstrap";
-import "../../../assets/style/home.css";
+import "./_/style.css";
 import SocialConfig from "../../../config/SocialConfig";
 import { GitHub } from "react-feather";
 import { OwnerDetail } from "../../../config/OwnerDetail";
@@ -12,8 +12,11 @@ const Index = () => {
           class="grad-circle d-flex justify-content-center align-items-center "
           id="minicircle"
         >
-          <a href="https://github.com/hassaanc-invents/react-portfolio" target="_blank">
-            <GitHub color="white"/>
+          <a
+            href="https://github.com/hassaanc-invents/react-portfolio"
+            target="_blank"
+          >
+            <GitHub color="white" />
           </a>
         </div>
       </Row>
@@ -23,15 +26,23 @@ const Index = () => {
           <h1 className="first-name mt-3">{OwnerDetail.sirName}</h1>
           <h1 className="last-name">{OwnerDetail.firstName}</h1>
           <div class="w-100 social-media d-flex align-items-center mt-4">
-            <hr className="social-row"/>
-            {Array.isArray(SocialConfig) && SocialConfig.map((item)=>(
-            <a className="social-icon-wrapper cursor-pointer rounded-circle d-flex align-items-center justify-content-center ms-4" title={item.title} href={item.referTo} target="_blank">
-            {item.icon}
-            </a>
-            ))}
+            <hr className="social-row" />
+            {Array.isArray(SocialConfig) &&
+              SocialConfig.map((item) => (
+                <a
+                  className="social-icon-wrapper cursor-pointer rounded-circle d-flex align-items-center justify-content-center ms-4"
+                  title={item.title}
+                  href={item.referTo}
+                  target="_blank"
+                >
+                  {item.icon}
+                </a>
+              ))}
           </div>
           <div className="mt-5">
-          <a href="contact" className="text-uppercase chat-button">let's chat!</a>
+            <a href="contact" className="text-uppercase chat-button">
+              let's chat!
+            </a>
           </div>
           <Row className="mt-5">
             <Col lg="4" md="6" className="d-flex align-items-center mt-3">
@@ -61,8 +72,7 @@ const Index = () => {
           </Row>
         </Col>
         <Col lg="6" className="d-none d-lg-block">
-          <div className="w-100 h-auto dev-circle d-flex justify-content-between rounded-circle">
-          </div>
+          <div className="w-100 h-auto dev-circle d-flex justify-content-between rounded-circle"></div>
           <div className="d-flex justify-content-center align-items-center">
           <img src={OwnerDetail.image} className="img-fluid main-img-fluid"></img>
           </div>
