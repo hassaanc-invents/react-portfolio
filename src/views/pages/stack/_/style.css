@@ -1,0 +1,31 @@
+.tech-stack-heading{
+    color: #6EF3A5;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.tech-detail{
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.stack-heading {
+    color: #7d7e83;
+    letter-spacing: 1px;
+    background-color: transparent;
+    font-size: 12px;
+}
+
+.stack-tech-button {
+    background-color: #6EF3A5 !important;
+}
+
+.stack-tech-button:hover {
+    box-shadow: 0 0 10px #6EF3A5;
+}
+
+.main-img-fluid {
+    height: calc(100vh - 10rem) !important;
+}

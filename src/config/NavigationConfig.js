@@ -1,5 +1,6 @@
 import Home from "../views/pages/home/Index";
-import Contect from "../views/pages/contact/Index";
+import Contact from "../views/pages/contact/Index";
+import Stack from "../views/pages/stack/Index";
 
 const NavigationConfig = [
   {
@@ -10,11 +11,18 @@ const NavigationConfig = [
     component: <Home />,
   },
   {
-    id: "contect",
-    title: "Contect",
-    path: "contect/",
+    id: "Stack",
+    title: "Stack",
+    path: "/stack",
     icon: "Utilize Later",
-    component: <Contect />,
+    component: <Stack />,
+  },
+  {
+    id: "Contact",
+    title: "Contact",
+    path: "/contact",
+    icon: "Utilize Later",
+    component: <Contact />,
   },
 ];
 export default NavigationConfig;

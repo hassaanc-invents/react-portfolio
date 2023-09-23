@@ -1,8 +1,9 @@
 import React from "react";
 import { Button, Row, Col, Card, CardHeader, CardBody } from "reactstrap";
 import SocialConfig from "../../../config/SocialConfig";
-import "./_/index.css";
+import "./_/style.css";
 import { Mail, Phone, Video } from "react-feather";
+import { ContactConfig } from "../../../config/ContactConfig";
 
 const Index = () => {
   const options = {
@@ -21,42 +22,55 @@ const Index = () => {
 
   return (
     <>
-      <Row className="w-100 d-none d-lg-flex justify-content-between text-center mt-5">
-        <h3>Get in touch</h3>
+      <Row className="w-100 d-lg-flex justify-content-between text-center mt-5">
+        <h3 className="touch-heading">Get in touch</h3>
         <p>Let's build something together :)</p>
       </Row>
-      <Row>
-        <Col lg="2" className="d-none d-lg-block"></Col>
-        <Col lg="4" className="pt-5">
-          <Card className="date-card text-light ">
-            <CardHeader className="card-month-header border-none text-center justify-content-between">
-              <p>{curDate.month}</p>
-            </CardHeader>
-            <CardBody className="card-days text-center">
-              <p>{curDate.date}</p>
-              <h3>{curDate.fullDay}</h3>
-            </CardBody>
-          </Card>
-          <Button className="meet-button mt-3">
-            <Video size={20} />
-            <span> Let's have a 15 min call </span>
-          </Button>
+      <Row className="mt-5 pt-4">
+        <Col lg="4" className="offset-lg-2">
+          <div className="w-100 d-flex justify-content-center">
+            <Card className="date-card text-light ">
+              <CardHeader className="card-month-header border-none text-center justify-content-between">
+                <p>{curDate.month}</p>
+              </CardHeader>
+              <CardBody className="card-days text-center">
+                <p>{curDate.date}</p>
+                <h3>{curDate.fullDay}</h3>
+              </CardBody>
+            </Card>
+          </div>
+          <a href={ContactConfig.calendlyMeetLink} target="_blank" className="w-100 text-decoration-none d-flex justify-content-center">
+            <Button className="meet-button mt-3">
+              <Video size={20} />
+              <span> Let's have a 30 min call </span>
+            </Button>
+          </a>
         </Col>
-        <Col lg="5" className="d-none d-lg-block">
-          <Button className="contact-btn mt-5">
-            <Video size={20} />
-            <span className="m-2"> Hire Me </span>
-          </Button>
-          <Button className="contact-btn mt-3">
-            <Mail size={20} />
-            <span className="m-2"> Hassaan@abc </span>
-          </Button>
-          <Button className="contact-btn mt-3">
-            <Phone size={20} />
-            <span className="m-2"> 03333333300 </span>
-          </Button>
-          <hr className="social-row" />
-          <div class="w-100 social-media d-flex align-items-center mt-4">
+        <Col lg="4">
+          <a
+            href={`mailto:${ContactConfig.email}`}
+            target="_blank"
+            className="w-100 text-decoration-none d-flex justify-content-center text-center"
+          >
+            <Button className="contact-btn mt-3">
+              <Mail size={20} className="me-2" />
+              {ContactConfig.email}
+            </Button>
+          </a>
+          <a
+            href={ContactConfig.whatsapp}
+            target="_blank"
+            className="w-100 text-decoration-none d-flex justify-content-center"
+          >
+            <Button className="contact-btn mt-3">
+              <Phone size={20} className="me-2" />
+              {ContactConfig.phone}
+            </Button>
+          </a>
+          <div className="d-flex justify-content-center">
+            <hr className="social-row" />
+          </div>
+          <div class="w-100 social-media d-flex justify-content-center align-items-center mt-4">
             {Array.isArray(SocialConfig) &&
               SocialConfig.map((item) => (
                 <a

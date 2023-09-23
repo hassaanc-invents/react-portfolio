@@ -43,6 +43,7 @@
     background-color: #25262a !important;
     border: 1px solid #25262a !important;
     transition: box-shadow 0.3s ease-in-out;
+    color: #6ef3a5 !important;
 }
 .contact-btn:hover{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.1), 0 0 10px #6ef3a5;
@@ -51,4 +52,7 @@
 .social-row {
     width: 400px;
     color: #111;
+}
+.touch-heading{
+    color: #6ef3a5;
 }
