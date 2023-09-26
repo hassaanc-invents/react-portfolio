@@ -14,13 +14,13 @@ const Index = () => {
           <p className="tech-detail">{MainiStackInformation.detailpara}</p>
           {Array.isArray(StackTechnologies) &&
             StackTechnologies.map((el) => (
-              <Row>
+              <Row key={el.heading}>
                 <span className="stack-heading my-1 mt-2">{el.heading}</span>
                 <div className="mt-2">
                   {Array.isArray(el.skills) &&
                     el.skills.map((skill) => (
                       <Button className="d-inline-block text-dark me-2 my-2 stack-tech-button border-none">
-                        <img src={skill.icon} className="me-2" height={22} width={22} /> {skill.name}
+                        <img src={skill.icon} alt="skill icon" className="me-2" height={22} width={22} /> {skill.name}
                       </Button>
                     ))}
                 </div>
@@ -30,6 +30,7 @@ const Index = () => {
         <Col lg="6" className="d-none d-lg-block">
           <div className="d-flex justify-content-center align-items-center">
             <img
+            alt="Stack"
               src={MainiStackInformation.image}
               className="img-fluid main-img-fluid"
             ></img>

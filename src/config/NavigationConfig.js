@@ -1,6 +1,7 @@
 import Home from "../views/pages/home/Index";
 import Contact from "../views/pages/contact/Index";
 import Stack from "../views/pages/stack/Index";
+import Projects from "../views/pages/projects/index";
 
 const NavigationConfig = [
   {
@@ -16,6 +17,13 @@ const NavigationConfig = [
     path: "/stack",
     icon: "Utilize Later",
     component: <Stack />,
+  },
+  {
+    id: "projects",
+    title: "Projects",
+    path: "/projects",
+    icon: "Utilize Later",
+    component: <Projects />,
   },
   {
     id: "Contact",

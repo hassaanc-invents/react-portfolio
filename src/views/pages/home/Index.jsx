@@ -15,6 +15,7 @@ const Index = () => {
           <a
             href="https://github.com/hassaanc-invents/react-portfolio"
             target="_blank"
+            rel="noreferrer"
           >
             <GitHub color="white" />
           </a>
@@ -26,7 +27,7 @@ const Index = () => {
           <h1 className="first-name mt-3">{OwnerDetail.sirName}</h1>
           <h1 className="last-name">{OwnerDetail.firstName}</h1>
           <div class="w-100 social-media d-flex align-items-center mt-4">
-            <hr className="social-row" />
+            <hr className="social-row d-none d-md-block" />
             {Array.isArray(SocialConfig) &&
               SocialConfig.map((item) => (
                 <a
@@ -34,6 +35,7 @@ const Index = () => {
                   title={item.title}
                   href={item.referTo}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   {item.icon}
                 </a>
@@ -74,7 +76,7 @@ const Index = () => {
         <Col lg="6" className="d-none d-lg-block">
           <div className="w-100 h-auto dev-circle d-flex justify-content-between rounded-circle"></div>
           <div className="d-flex justify-content-center align-items-center">
-          <img src={OwnerDetail.image} className="img-fluid main-img-fluid"></img>
+          <img src={OwnerDetail.image} alt="Owner" className="img-fluid main-img-fluid"></img>
           </div>
         </Col>
       </Row>

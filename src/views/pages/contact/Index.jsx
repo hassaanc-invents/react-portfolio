@@ -39,7 +39,7 @@ const Index = () => {
               </CardBody>
             </Card>
           </div>
-          <a href={ContactConfig.calendlyMeetLink} target="_blank" className="w-100 text-decoration-none d-flex justify-content-center">
+          <a href={ContactConfig.calendlyMeetLink} rel="noreferrer"  target="_blank" className="w-100 text-decoration-none d-flex justify-content-center">
             <Button className="meet-button mt-3">
               <Video size={20} />
               <span> Let's have a 30 min call </span>
@@ -50,6 +50,7 @@ const Index = () => {
           <a
             href={`mailto:${ContactConfig.email}`}
             target="_blank"
+            rel="noreferrer"
             className="w-100 text-decoration-none d-flex justify-content-center text-center"
           >
             <Button className="contact-btn mt-3">
@@ -60,6 +61,7 @@ const Index = () => {
           <a
             href={ContactConfig.whatsapp}
             target="_blank"
+            rel="noreferrer"
             className="w-100 text-decoration-none d-flex justify-content-center"
           >
             <Button className="contact-btn mt-3">
@@ -78,6 +80,7 @@ const Index = () => {
                   title={item.title}
                   href={item.referTo}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   {item.icon}
                 </a>
