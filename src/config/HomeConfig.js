@@ -11,3 +11,5 @@ export const OwnerDetail = {
     countriesWorkingIn: 2,
     contentReach: 55 //Number of Thousands i.e 1 for 1 thousands
 }
+
+export const AnimatedSkillsText =  ["Frontend Developer", "A Mentor", "A Teacher", "A Learner"]

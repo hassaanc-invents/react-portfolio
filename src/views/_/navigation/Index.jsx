@@ -10,7 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import NavbarIcon from "../../../assets/icons/burger-icon.svg";
 import NavigationConfig from "../../../config/NavigationConfig";
-import { OwnerDetail } from "../../../config/OwnerDetail";
+import { OwnerDetail } from "../../../config/HomeConfig";
 
 const Navigation = () => {
   const [collapsed, setCollapsed] = useState(true);
