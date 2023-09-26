@@ -64,3 +64,9 @@
     background-color: transparent;
     font-size: 12px;
 }
+
+.right-angle{
+    border-top: 8px solid transparent;
+    border-left: 15px solid #6EF3A5;
+    border-bottom: 8px solid transparent;
+}
