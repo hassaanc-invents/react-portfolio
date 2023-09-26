@@ -68,7 +68,7 @@ const Index = () => {
             </Button>
           </a>
           <div className="d-flex justify-content-center">
-            <hr className="social-row" />
+            <hr className="social-row-contact" />
           </div>
           <div class="w-100 social-media d-flex justify-content-center align-items-center mt-4">
             {Array.isArray(SocialConfig) &&
