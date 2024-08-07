@@ -16,6 +16,7 @@ import PhpIcon from "../assets/icons/technologies-icons/php-programming-language
 import MySqlIcon from "../assets/icons/technologies-icons/database.png"
 import HostingerIcon from "../assets/icons/technologies-icons/cloud-data.png"
 import GoDaddyIcon from "../assets/icons/technologies-icons/servers.png"
+import NetSonsIcon from "../assets/icons/technologies-icons/net-sons.png"
 
 export const MainiStackInformation = {
   heading: "Tech Stack",
@@ -88,6 +89,10 @@ export const StackTechnologies = [
       {
         name: "GoDaddy",
         icon: GoDaddyIcon
+      },
+      {
+        name: "Netsons",
+        icon: NetSonsIcon
       }
     ]
   },
