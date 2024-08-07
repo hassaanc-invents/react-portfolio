@@ -2,7 +2,7 @@ import { Clipboard, GitHub, Globe } from "react-feather";
 import Devolio from "../assets/images/projects/devolio.png";
 import PacksTrack from "../assets/images/projects/packstrack.png";
 import EBillPK from "../assets/images/projects/ebillpk.png";
-import BrandAPK from "../assets/images/projects/apk-website.png";
+import ApkWebsite from "../assets/images/projects/apk-website.png";
 import BrandEye from "../assets/images/projects/brand-eye.png";
 import DnaCards from "../assets/images/projects/dna-cards.png";
 
@@ -39,7 +39,7 @@ export const ProjectsCompleted = [
     {
         name: "APK Website (Custom Blog)",
         source: "Product",
-        background: BrandAPK,
+        background: ApkWebsite,
         availableOn: [
             {
                 title: "Private",
