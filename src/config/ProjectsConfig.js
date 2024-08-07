@@ -1,7 +1,8 @@
-import { GitHub, Globe } from "react-feather";
+import { Clipboard, GitHub, Globe } from "react-feather";
 import Devolio from "../assets/images/projects/devolio.png";
 import PacksTrack from "../assets/images/projects/packstrack.png";
 import EBillPK from "../assets/images/projects/ebillpk.png";
+import BrandAPK from "../assets/images/projects/apk-website.png";
 
 export const MainProjectInformation = {
   heading: "Projects",
@@ -9,6 +10,18 @@ export const MainProjectInformation = {
 };
 
 export const ProjectsCompleted = [
+    {
+        name: "APK Website",
+        source: "Product",
+        background: BrandAPK,
+        availableOn: [
+            {
+                title: "Private",
+                icon: <Clipboard size={15} className="me-2"/>,
+                referTo: '#'
+            }
+        ]
+    },
     {
         name: "Dev Portfolio (ReactJs)",
         source: "Open Source",
