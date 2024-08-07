@@ -2,7 +2,9 @@ import { Clipboard, GitHub, Globe } from "react-feather";
 import Devolio from "../assets/images/projects/devolio.png";
 import PacksTrack from "../assets/images/projects/packstrack.png";
 import EBillPK from "../assets/images/projects/ebillpk.png";
-import BrandAPK from "../assets/images/projects/apk-website.png";
+import ApkWebsite from "../assets/images/projects/apk-website.png";
+import BrandEye from "../assets/images/projects/brand-eye.png";
+import DnaCards from "../assets/images/projects/dna-cards.png";
 
 export const MainProjectInformation = {
   heading: "Projects",
@@ -11,9 +13,33 @@ export const MainProjectInformation = {
 
 export const ProjectsCompleted = [
     {
-        name: "APK Website",
+        name: "Brand Eye (Survey Website)",
         source: "Product",
-        background: BrandAPK,
+        background: BrandEye,
+        availableOn: [
+            {
+                title: "Private",
+                icon: <Clipboard size={15} className="me-2"/>,
+                referTo: 'https://brand-eye.identitors.it/'
+            }
+        ]
+    },
+    {
+        name: "DNA Cards (Digital DNA Platform)",
+        source: "Product",
+        background: DnaCards,
+        availableOn: [
+            {
+                title: "Private",
+                icon: <Clipboard size={15} className="me-2"/>,
+                referTo: 'https://dna-cards.com/'
+            }
+        ]
+    },
+    {
+        name: "APK Website (Custom Blog)",
+        source: "Product",
+        background: ApkWebsite,
         availableOn: [
             {
                 title: "Private",
@@ -57,7 +83,7 @@ export const ProjectsCompleted = [
         ]
     },
     {
-        name: "EBillPK (Pak Electric Bill Checking)",
+        name: "EBillPK (Electric Bill Checking)",
         source: "Open Source",
         background: EBillPK,
         availableOn: [
