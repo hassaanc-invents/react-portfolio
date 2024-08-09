@@ -20,6 +20,11 @@ export const ProjectsCompleted = [
             {
                 title: "Private",
                 icon: <Clipboard size={15} className="me-2"/>,
+                referTo: ''
+            },
+            {
+                title: "Website",
+                icon: <Globe size={15} className="me-2"/>,
                 referTo: 'https://brand-eye.identitors.it/'
             }
         ]
@@ -32,6 +37,11 @@ export const ProjectsCompleted = [
             {
                 title: "Private",
                 icon: <Clipboard size={15} className="me-2"/>,
+                referTo: ''
+            },
+            {
+                title: "Website",
+                icon: <Globe size={15} className="me-2"/>,
                 referTo: 'https://dna-cards.com/'
             }
         ]
