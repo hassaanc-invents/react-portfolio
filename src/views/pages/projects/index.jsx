@@ -17,7 +17,7 @@ const Index = () => {
       <Row className="mt-5">
         {Array.isArray(ProjectsCompleted) &&
           ProjectsCompleted.map((project) => (
-            <Col md="4" className="d-flex justify-content-center mb-4">
+            <Col md="6" lg="4" className="d-flex justify-content-center mb-4">
               <Card className="project-card">
                 <CardHeader className="w-100 p-0">
                   <Button className="ms-2 mt-2 py-1 position-absolute source-button">
